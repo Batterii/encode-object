@@ -1,6 +1,6 @@
 {
 	"name": "@batterii/encode-object",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Object encoding and decoding utils",
 	"author": "Batterii, LLC",
 	"license": "UNLICENSED",
