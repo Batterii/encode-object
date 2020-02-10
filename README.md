@@ -48,7 +48,7 @@ console.log(decodeObject(encodeObject(null)));
 ## Error Handling
 This package uses [Nani][3] to define the following error classes:
 
-- `BatteriiEncodeObjectError`: This is the base class for all other errors in
+- `EncodeObjectError`: This is the base class for all other errors in
   the package, for namespacing purposes.
 
 - `InvalidJsonError`: Will be thrown if encoded text contaning invalid JSON is
