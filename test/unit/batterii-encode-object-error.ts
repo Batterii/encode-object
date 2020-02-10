@@ -1,10 +1,11 @@
 import { BatteriiEncodeObjectError }
 	from '../../lib/batterii-encode-object-error';
-import { NaniError } from 'nani';
+import { BatteriiError } from '@batterii/errors';
 import { expect } from 'chai';
 
 describe('BatteriiEncodeObjectError', function() {
-	it('extends NaniError', function() {
-		expect(new BatteriiEncodeObjectError()).to.be.an.instanceOf(NaniError);
+	it('extends BatteriiError', function() {
+		expect(new BatteriiEncodeObjectError())
+			.to.be.an.instanceOf(BatteriiError);
 	});
 });

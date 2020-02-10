@@ -1,4 +1,4 @@
-import { NaniError } from 'nani';
+import { BatteriiError } from '@batterii/errors';
 
 /**
  * Base class for all errors defined by @batterii/encode-object.
@@ -8,4 +8,4 @@ import { NaniError } from 'nani';
  * [NaniError](https://sripberger.github.io/nani/#nanierror) and may use any of
  * the constructor arguments of that class.
  */
-export class BatteriiEncodeObjectError extends NaniError {}
+export class BatteriiEncodeObjectError extends BatteriiError {}
