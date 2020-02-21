@@ -3,13 +3,17 @@ This module contains utility functions for encoding and decoding
 JSON-serializable objects from [base64url][1], allowing them to be safely sent
 as HTTP headers and URI components.
 
+There are many modules like this already, but at Batterii we wrote yet another
+one and ended up wanting to open-source some things that depend on it. So we
+open-sourced this as well. Feel free to use but there's really nothing special
+about it.
+
 Note that while encoded objects are not typically human-readable, that does not
 mean they are encrypted or signed in any way. Reading the data from them is as
 simple as reversing the encoding process, and tampering with them is as simple
 as repeating it with different data.
 
-To produce signed tokens, which prevent tampering, use [@batterii/tokengrip][2]
-instead.
+To produce signed tokens, which prevent tampering, use [tokengrip][2] instead.
 
 
 ## Usage
@@ -56,5 +60,5 @@ This package uses [Nani][3] to define the following error classes:
 
 
 [1]: https://base64.guru/standards/base64url
-[2]: https://www.npmjs.com/package/@batterii/tokengrip
+[2]: https://www.npmjs.com/package/tokengrip
 [3]: https://www.npmjs.com/package/nani
